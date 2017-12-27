@@ -9,7 +9,9 @@ export const FETCH_WEATHER = 'FETCH_WEATHER';
 export function fetchWeather(city) {
     const url = `${ROOT_URL}&q=${city},us`
     // axios get returns a promise
-    const request = axios.get(url);    
+    const request = axios.get(url); 
+    // redux-promise will halt action and wait until the promise from the
+    // api request is resolved, then it will pass the resulting data on to the reducer.
     return {
         type: FETCH_WEATHER,
         payload: request
