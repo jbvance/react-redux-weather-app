@@ -1,24 +1,19 @@
-# ReduxSimpleStarter
+# React Redux Weather History Chart
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+A react app that allows you to enter cities in the U.S. and display charts of the past five days of weather information (temperature,  pressure, and  humidity).
 
 ### Getting Started
 
-There are two methods for getting started with this repo.
-
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
-
+You will need an API key from [OpenWeatherMap](http://openweathermap.org/forecast5). Then, you will need to create a file called 'config.json' at the root of the project and add the following code:
 ```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
+const config = {
+    api_key: '19512112eeceaf5973eaee905722a63c'
+}
+
+export default config;
 ```
 
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
+#### Installing dependencies
 ```
 > npm install
 > npm start
