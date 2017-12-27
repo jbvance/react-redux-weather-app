@@ -4,7 +4,7 @@ A react app that allows you to enter cities in the U.S. and display charts of th
 
 ### Getting Started
 
-You will need an API key from [OpenWeatherMap](http://openweathermap.org/forecast5). Then, you will need to create a file called 'config.json' at the root of the project and add the following code:
+You will need an API key from [OpenWeatherMap](http://openweathermap.org/forecast5). Then, you will need to create a file called 'config.js' at the root of the project and add the following code:
 ```
 const config = {
     api_key: '[YOUR_API_KEY]'
